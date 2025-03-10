@@ -11,6 +11,6 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-  "serve": "latest"
-}
+    "serve": "^14.2.4"
+  }
 }
