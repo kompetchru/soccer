@@ -3,11 +3,12 @@ import { useEffect, useState } from 'react';
 export default function Home() {
     const [matches, setMatches] = useState([]);
 
-    useEffect(() => {
-        fetch('https://soccer-production.up.railway.app/matches')
-            .then(response => response.json())
-            .then(data => setMatches(data));
-    }, []);
+useEffect(() => {
+    fetch('https://soccer-api-0om6.onrender.com/matches')
+        .then(response => response.json())
+        .then(data => setMatches(data));
+}, []);
+
 
     return (
         <div className="min-h-screen bg-gray-900 text-white p-6">
